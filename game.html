@@ -1,0 +1,30 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="game.js"></script>
+<title>Chopstick Game</title>
+</head>
+<body onload="onLoad()">
+<img id="imgopl" src="hand1.png">
+<img id="imgopr" src="hand1.png">
+<br/>
+<button type="button" id="btntapll" onclick="onTap(0, 2)">L tap L</button>
+<button type="button" id="btntaplr" onclick="onTap(0, 3)">L tap R</button>
+<button type="button" id="btntaprl" onclick="onTap(1, 2)">R tap L</button>
+<button type="button" id="btntaprr" onclick="onTap(1, 3)">R tap R</button>
+<br/>
+<img id="imgmel" src="hand1.png">
+<img id="imgmer" src="hand1.png">
+<br/>
+<button type="button" id="btntapmlr" onclick="onTap(0, 1)">L tap my R</button>
+<button type="button" id="btntapmrl" onclick="onTap(1, 0)">R tap my L</button>
+<br/>
+<button type="button" id="btnsplit1" onclick="onSplit(1)">Split to 1, 2</button>
+<button type="button" id="btnsplit2" onclick="onSplit(2)">Split to 2, 3</button>
+<button type="button" id="btnsplit3" onclick="onSplit(3)">Split to 3, 2</button>
+<button type="button" id="btnsplit4" onclick="onSplit(4)">Split to 4, 1</button>
+<br/>
+<button type="button" id="btnreset" onclick="onReset()">Restart</button>
+<button type="button" id="btnback" onclick="onBack()">Back</button>
+</body>
+</html>
